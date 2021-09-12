@@ -26,7 +26,7 @@ const useTimeout = (callback, delay) => {
     set();
   }, [clear, set]);
 
-  return { reset, clear };
+  return [reset, clear];
 };
 
 export default useTimeout;
